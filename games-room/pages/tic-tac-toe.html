@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/ttt.css">
+
+    <script src="../js/ttt.js" defer></script>
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="square">
+            <div data-item="a1" class="box b r"></div>
+            <div data-item="a2" class="box b r"></div>
+            <div data-item="a3" class="box b"></div>
+
+            <div data-item="b1" class="box b r"></div>
+            <div data-item="b2" class="box b r"></div>
+            <div data-item="b3" class="box b"></div>
+
+            <div data-item="c1" class="box r"></div>
+            <div data-item="c2" class="box r"></div>
+            <div data-item="c3" class="box"></div>
+        </div>
+
+
+        <div class="warning">
+            <p>Turn: <br> <span id="player">--</span></p>
+
+            <div class="counter">
+                <p>
+                    <span id="playerX"></span>: <span id="points-player1"></span> <br>
+                    <span id="playerY"></span>: <span id="points-player2"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

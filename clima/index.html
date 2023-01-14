@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>clima</title>
+</head>
+<body>
+    <div class="weather-area">
+        <div class="main-weather">
+                
+            <h2>Previsão do tempo</h2>
+            
+
+            <div class="weather-info">
+                
+
+                <div id="city-deg">
+
+                    <div id="degress">19° </div>
+
+                    
+                    <h3 id="title-city">São paulo</h3>
+                    <p id="city-info--day">
+                        Máx. 20°C - Min. 17°C <br>
+                        Sábado 05/11/2022
+                    </p>
+                </div>
+
+                <div class="cloud-info">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="cloud-img"/>
+                    <p>nuvens dispersas</p>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="cities-area">
+
+        <div class="cities-area-container">
+            <form class="form">
+                <input type="text" id="search-city" placeholder="Buscar Localização..." autocomplete="off">
+                <button id="btn">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <div class="cities-options">
+                <div id="sp">São Paulo</div> 
+                <div id="rec">Recife</div> 
+                <div id="london">London</div> 
+                <div id="paris">Paris</div> 
+                <div id="ny">New York</div>
+            </div>
+
+            <div class="weather-details">
+                <h2>detalhes do clima</h2>
+                <div class="details">Nuvens <span id="clouds">0</span></div>
+                <div class="details">Umidade <span id="damp">57%</span></div>
+                <div class="details down">Vento <span id="wind">7.2km/h</span></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <img src="img/spinner.gif" alt="spinner" id="spinner">
+
+    <script src="main.js"></script>
+</body>
+</html>

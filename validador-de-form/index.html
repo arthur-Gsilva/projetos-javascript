@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+    <title>Validador de Formulário</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h2>Criar conta</h2>
+        </div>
+
+        <form class="form">
+            <div class="form-control">
+                <label for="username">Nome</label>
+                <input type="text" name="username" id="username">
+                <i><img class="img-success" src="images/success-icon.svg"></i>
+                <i><img class="img-error" src="images/error-icon.svg"></i>
+
+                <span class="error-message">Error message</span>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <i><img src="images/success-icon.svg" class="img-success"></i>
+                <i><img src="images/error-icon.svg" class="img-error"></i>
+
+                <span class="error-message">Error message</span>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password">
+                <i><img src="images/success-icon.svg" class="img-success"></i>
+                <i><img src="images/error-icon.svg" class="img-error"></i>
+
+                <span class="error-message">Error message</span>
+            </div>
+
+            <div class="form-control">
+                <label for="password-two">Confirme sua Senha</label>
+                <input type="password" name="password-two" id="password-two">
+                <i><img src="images/success-icon.svg" class="img-success"></i>
+                <i><img src="images/error-icon.svg" class="img-error"></i>
+
+                <span class="error-message">Error message</span>
+            </div>
+
+
+            <button class="button">enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+
+.login-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    width: 100%;
+    
+    background-color: #ccc;
+    
+}
+
+.login-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-header h1{
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.login-header img{
+    width: 100px;
+}
+
+#username{
+    border: 2px solid #222;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#button{
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #EE665C;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 1rem;
+}
+
+#button:disabled{
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/quiz-game.css">
+
+    
+    <title>Quiz Game</title>
+</head>
+<body>
+
+    <div class="bar">
+        <div class="progress-bar"></div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="title">Quiz Soccer</h1>
+
+        <div class="question-area">
+            <div class="question">
+                
+            </div>
+
+            <div class="options">
+
+            </div>
+                
+        </div>
+
+
+    </div>
+
+    <div class="score-area container">
+        <h1 class="title">Congratulations!!!!</h1>
+        <p class="score-description">
+            <span id="player"></span>,
+            You scored 10/10 of questions
+        </p>
+        <p class="classification">You Scored <span id="pct">99%</span></p>
+
+        <button id="button">Play Again</button>
+    </div>
+
+
+
+    <audio src="../assets/audios/quiz-audios/quiz-audio.mp3"></audio>
+    <!-- QUESTIONS -->
+    <script src="../js/question.js" defer></script>
+    
+    <!-- JAVASCRIPT -->
+    <script src="../js/quiz-game.js" defer></script>
+
+
+</body>
+</html>

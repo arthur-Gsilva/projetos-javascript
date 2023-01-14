@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(52, 175, 52);
+    background: linear-gradient(#87ceeb, #e0f6ff);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 2s infinite linear;
+    
+}
+
+.mario{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+
+.jump{
+    animation: jump .5s ease-out;
+}
+
+.clouds{
+    position: absolute;
+    width: 350px;
+    animation: clouds-animation 25s infinite linear;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 190px;
+    }
+
+    50%{
+        bottom: 190px;
+    }
+
+    60%{
+        bottom: 190px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes pipe-animation{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation{
+    from{
+        right: -350px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+
+.retry{
+    margin-top: 50px;
+    display: none;
+}
+
+.retry p{
+    font-size: 2rem;
+}
+
+.retry button{
+    font-size: 1rem;
+    padding: 5px;
+    background-color: #F7DC6F;
+    color: #AF601A;
+    border: 1px solid #AF601A;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 800px){
+    .mario{
+        width: 110px;
+    }
+
+    .pipe{
+        width: 60px;
+    }
+}
+
+@media(max-width: 500px){
+    .mario{
+        width: 80px;
+    }
+
+    .pipe{
+        width: 45px;
+    }
+}

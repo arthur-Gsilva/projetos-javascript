@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/memory-game.css">
+
+    <!-- script -->
+    <script src="../js/memory-game.js" defer></script>
+    <title>Memory Game</title>
+</head>
+<body>
+    <header>
+        <span class="player"></span>
+        <span class="time"> Time: <span class="timer">00</span></span>
+    </header>
+
+    <div class="grid"></div>
+
+
+
+    <div class="square-victory">
+        <p>
+            congratulations <span class="player"></span>, You won the game. <br> <br>
+            your time was <span class="score"></span> seconds.
+        </p>
+
+        <button id="button">Restart</button>
+    </div>
+
+
+    <audio src="../assets/audios/memory-audios/aot-audio.mp3" id="audio"></audio>
+</body>
+</html>
