@@ -13,14 +13,20 @@ document.querySelector('#button').addEventListener('click', () => {
 
 
 const OptionClickEvent = (e) => {
-    let clickedOption = +e.target.getAttribute('data-op')
+    const clickedOption = +e.target.getAttribute('data-op')
+    const clickedOptionBox = e.target
 
     if(questions[currentQuestion].answer === clickedOption){
-        correctAnswer++      
+        correctAnswer++
+        clickedOptionBox.style.backgroundColor = 'green'
+    } else{
+        clickedOptionBox.style.backgroundColor = 'red'
     }
 
-    currentQuestion++
-    showQuestion() 
+    setTimeout(() => {
+        currentQuestion++
+        showQuestion()
+    }, 500) 
 }
 
 const progressBar = () => {
@@ -48,6 +54,7 @@ const validationCheck = (points) => {
 const finishQuiz = () => {
 
     let player = document.getElementById('player').innerHTML = localStorage.getItem('player')
+
     let points = Math.floor((correctAnswer / questions.length) * 100)
     document.getElementById('pct').innerHTML = `${points}%`
     document.querySelector('.score-description').innerHTML = `
