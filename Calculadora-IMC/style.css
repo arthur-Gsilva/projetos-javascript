@@ -62,6 +62,11 @@ header h1{
     background-color: #D5DBDB;
 }
 
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
 button{
     width: 300px;
     height: 40px;
