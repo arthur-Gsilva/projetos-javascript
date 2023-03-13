@@ -1,87 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-    <!-- CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 
-    <!-- JAVASCRIPT -->
     <script src="main.js" defer></script>
     <title>Todo List</title>
 </head>
 <body>
-    <div class="todo-container">
-        <header class="header">
-             <h1 class="title">Todo Avançado</h1>
-        </header>
-
-        <form class="todo-form">
-            <p class="todo-form-text">Adicione sua tarefa:</p>
-
-            <div class="form-control">
-                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
-                <button class="form-button button">
-                    <i class="bi bi-plus"></i>
-                </button>
-            </div>
+    <main>
+        <form class="add-form" autocomplete="off">
+            <input type="text" placeholder="Adicionar tarefa" id="add-input">
+            <button>+</button>
         </form>
 
-        <form class="edit-form hide">
-            <p class="edit-form-text">Edite a sua tarefa</p>
-            <div class="form-control">
-                <input type="text" id="edit-input">
-                <button class="form-button button">
-                    <i class="bi bi-check2-square"></i>
-                </button>
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Criada Em</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
 
-            <button class="cancel-edit button">Cancelar</button>
-        </form>
-
-        <div class="toolbar">
-            <div class="search">
-                <h4 class="search-title">Pesquisar</h4>
-                <form>
-                    <input type="text" id="search-input" placeholder="Buscar">
-                    <button class="erase-button button">
-                        <i class="bi bi-trash3"></i>
-                    </button>
-                </form>
-            </div>
-
-            <div class="filter">
-                <h4 class="filter-title">Filtrar:</h4>
-                <select id="filter-select">
-                    <option value="all">Todos</option>
-                    <option value="done">Feitos</option>
-                    <option value="todos">A fazer</option>
-                </select>
-            </div>
-        </div>
-
-        
-
-        <div class="todo-list">
-            <div class="todo done">
-                <h3 class="todo-title">Estou fazendo alguma coisa...</h3>
-                <button class="finish-todo button">
-                    <i class="bi bi-check-lg"></i>
-                </button>
-                <button class="edit-todo button">
-                    <i class="bi bi-pencil-fill"></i>
-                </button>
-                <button class="remove-todo button">
-                    <i class="bi bi-x"></i>
-                </button>
-            </div>
-
-        </div>
-    </div>
+            <tbody class="todo">             
+                 
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
