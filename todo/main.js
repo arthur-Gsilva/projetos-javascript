@@ -27,6 +27,12 @@ const addZero = (num) => {
     }
 }
 
+const createElementClass = (tag, className) => {
+    const element = document.createElement(tag)
+    element.className = className
+    return element
+}
+
 const addTask = (task) => {
     let now = new Date()
     let year = now.getFullYear()
@@ -37,15 +43,12 @@ const addTask = (task) => {
 
     const container = document.createElement('tr')
 
-    const taskTitle = document.createElement('td')
-    taskTitle.classList.add('task-title')
+    const taskTitle = createElementClass('td', 'task-title')
     taskTitle.innerHTML = task
     container.appendChild(taskTitle)
 
-    const tdEdit = document.createElement('td')
-    tdEdit.classList.add('hide')
-    const editInputArea = document.createElement('form')
-    editInputArea.classList.add('input-edit')
+    const tdEdit = createElementClass('td', 'hide')
+    const editInputArea = createElementClass('form', 'input-edit')
     const editInput = document.createElement('input')
     editInput.type = 'text'
     tdEdit.appendChild(editInputArea)
@@ -74,12 +77,10 @@ const addTask = (task) => {
     container.appendChild(options)
 
     const buttonsArea = document.createElement('td')
-    const editBtn = document.createElement('button')
-    editBtn.classList.add('btn-action')
+    const editBtn = createElementClass('button', 'btn-action')
     editBtn.classList.add('edit-btn')
     editBtn.innerHTML = "<i class='bx bxs-pencil edit-btn'></i>"
-    const removeBtn = document.createElement('button')
-    removeBtn.classList.add('btn-action')
+    const removeBtn = createElementClass('button', 'btn-action')
     removeBtn.classList.add('remove-btn')
     removeBtn.innerHTML = "<i class='bx bxs-trash remove-btn'></i>"
     buttonsArea.appendChild(editBtn)
